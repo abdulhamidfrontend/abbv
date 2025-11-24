@@ -24,7 +24,7 @@ const Contact = () => {
 
     // === VALIDATSIYA ===
     if (!phoneRegex.test(phone)) {
-      setError("Telefon raqami noto‘g‘ri! Masalan: +998 90XXXXXXX");
+      setError("Telefon raqami noto‘g‘ri! Masalan: +99890XXXXXXX");
       return;
     }
 
@@ -85,10 +85,10 @@ Yangi kontakt so'rovi:
 
           <input
             type="text"
-            placeholder="Nomeringiz: +998 90XXXXXXX"
+            placeholder="Nomeringiz: +99890XXXXXXX"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
-            className="w-full p-3 rounded-lg max-[600px]:text-xs bg-zinc-800 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-3 rounded-lg  bg-zinc-800 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
 
           <input
@@ -96,7 +96,7 @@ Yangi kontakt so'rovi:
             placeholder="TG @yourusername"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
-            className="w-full p-3 rounded-lg max-[600px]:text-xs bg-zinc-800 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-3 rounded-lg  bg-zinc-800 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
 
           <textarea
@@ -104,7 +104,7 @@ Yangi kontakt so'rovi:
             placeholder="Your Message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            className="w-full p-3 rounded-lg max-[600px]:text-xs bg-zinc-800 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-3 rounded-lg  bg-zinc-800 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
           ></textarea>
 
           <button
